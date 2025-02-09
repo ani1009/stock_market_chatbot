@@ -6,4 +6,10 @@ After activating virtual environment you have to install Dependencies using pip 
 For First .py file run : streamlit run chatbot.py
 For Second .py file run : streamlit run chatbot1.py
 After Running chatbot.py File you will have Streamlit Interface and you will able to chat with chatbot: You can ask which is best performing stock, or any particular stock that you want
-After Running chatbot1.py File You Will AI Model's(Microsoft phi-2) Response You can ask bot questions like what is Stock, History of any Particular Stock etc.
+To run chatbot1.py file you must have to install some dependencies using pip command (in venv activated terminal): streamlit yfinance  plotly  numpy  langchain ollama
+After Installing Dependencies You have to install Ollama in your Local System and you have to Download Phi-2: a 2.7B language model by Microsoft. here is the link: https://ollama.com/library/phi
+After that you can run follwing command in your venv activated terminal: ollama list
+You will see model named phi:latest (This is the AI Model which we Used)
+After that You Just have to run command: ollama pull phi 
+You will see ollama will Successfully able to pull phi model in youe venv
+After performing all steps you just have to run chatbot1.py File using streamlit command & You Will AI Model's(Microsoft phi-2) Response You can ask bot questions like what is Stock, History of any Particular Stock etc.
